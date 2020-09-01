@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
+  pageSelected?: 'dashboard' | 'import';
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -25,6 +26,7 @@ export const Container = styled.div<ContainerProps>`
 
         & + a {
           margin-left: 32px;
+          color: #fff;
         }
 
         &:hover {
